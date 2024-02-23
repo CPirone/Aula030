@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <ul>
+        {% for option in options %}
+            <li><a href="{{ option.lower() }}">{{ option }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
